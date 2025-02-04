@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+}
+.Header{
+    background-image:url("img/zenith-bg.png");
+    background-position: center;
+    height: 300px;
+    background-size:2000px;
+    background-repeat: no-repeat ;
+    margin: 0px;
+    display: flex;
+}
+.nav{
+    color: #ffffff;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+}
+.nav h1{
+    font-size: 100px;
+    margin: 0px;
+    padding-bottom: 0px;
+    font-weight: lighter;
+}
+
+.nav p {
+    font-size: 30px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.selection {
+    display:inline-flex; 
+}
+
+.selection h2 {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 40px;
+    color:rgba(0, 0, 0, 0.959);    
+}
+
+.border {
+    width: 1700px;
+    border-top: 3px solid;
+    margin-left: 70px;
+}
+
+.selection img {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.selection p {
+    text-align: center;
+    width: 215px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 185px;
+}
+
+.selection ul {
+    min-width: 250px;
+}
+
+.selection li {
+    display: flex;
+    vertical-align: middle;
+    font-size: 25px;
+    line-height: 20px;
+    padding-left: 5px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+.selection span1 {
+    width: 30px;
+    height: 30px;
+    background: rgb(92, 92, 92);
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.selection span2 {
+    width: 30px;
+    height: 45px;
+    background: rgb(75, 45, 17);
+    display: inline-block;
+    margin-right: 30px;
+
+}
+
+.selection span3 {
+    width: 30px;
+    height: 45px;
+    background: rgb(75, 45, 17);
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.selection span4 {
+    width: 30px;
+    height: 60px;
+    background: rgb(255, 187, 124);
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.footer p {
+    text-align: center;
+    display: inline-flex;
+    font-size: 25px;
+    margin-left: 390px;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: rgb(75, 45, 17);
+}
