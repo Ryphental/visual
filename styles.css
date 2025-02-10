@@ -1,125 +1,184 @@
-body{
-    margin: 0px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
-.Header{
-    background-image:url("img/zenith-bg.png");
+
+header {
+    background-image: url("img/zenith-bg.png");
     background-position: center;
-    height: 300px;
-    background-size:2000px;
-    background-repeat: no-repeat ;
-    margin: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
     display: flex;
-}
-.nav{
-    color: #ffffff;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
+    color: #ffffff;
 }
-.nav h1{
-    font-size: 100px;
-    margin: 0px;
-    padding-bottom: 0px;
+
+nav h1 {
+    font-size: 6rem;
+    margin: 0;
     font-weight: lighter;
 }
 
-.nav p {
-    font-size: 30px;
-    margin: 5px;
-    vertical-align: middle;
+nav p {
+    font-size: 1.5rem;
+    margin: 5px 0;
 }
 
-.selection {
-    display:inline-flex; 
+main {
+    padding: 20px;
 }
 
-.selection h2 {
-    margin-left: 100px;
-    margin-top: 100px;
-    font-size: 40px;
-    color:rgba(0, 0, 0, 0.959);    
+section {
+    margin: 20px 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin: 20px 200px;
 }
 
 .border {
-    width: 1700px;
-    border-top: 3px solid;
-    margin-left: 70px;
+    width: 80%;
+    border-top: 3px solid #000;
+    margin: 20px auto;
 }
 
-.selection img {
-    height: 200px;
-    width: 200px;
+
+.grid-container {
     display: flex;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
 }
 
-.selection p {
-    text-align: center;
-    width: 215px;
-    font-size: 30px;
-    margin-top: 50px;
-    margin-left: 185px;
-}
 
-.selection ul {
-    min-width: 250px;
-}
-
-.selection li {
+.item {
     display: flex;
-    vertical-align: middle;
-    font-size: 25px;
-    line-height: 20px;
-    padding-left: 5px;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-bottom: 40px;
-}
-
-.selection span1 {
-    width: 30px;
-    height: 30px;
-    background: rgb(92, 92, 92);
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.selection span2 {
-    width: 30px;
-    height: 45px;
-    background: rgb(75, 45, 17);
-    display: inline-block;
-    margin-right: 30px;
-
-}
-
-.selection span3 {
-    width: 30px;
-    height: 45px;
-    background: rgb(75, 45, 17);
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.selection span4 {
-    width: 30px;
-    height: 60px;
-    background: rgb(255, 187, 124);
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.footer p {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    display: inline-flex;
-    font-size: 25px;
-    margin-left: 390px;
-    color: #ffffff;
+    width: 200px; 
 }
 
-.footer {
+.item img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px; 
+}
+
+.item p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.steps ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 230px;
+}
+
+.steps li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.steps span {
+    width: 40px;
+    height: 45px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.step1 { background: rgb(92, 92, 92); }
+.step2 { background: rgb(75, 45, 17); }
+.step3 { background: rgb(75, 45, 17); }
+.step4 { background: rgb(255, 187, 124); }
+
+footer {
     background-color: rgb(75, 45, 17);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1% 10%;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav h1 {
+        font-size: 3rem;
+    }
+
+    nav p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .images img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .descriptions p {
+        font-size: 1rem;
+        width: 150px;
+    }
+
+    .steps li {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    nav p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .images img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .descriptions p {
+        font-size: 0.9rem;
+        width: 120px;
+    }
+
+    .steps li {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
